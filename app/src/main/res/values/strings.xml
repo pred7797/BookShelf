@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BookShelf</string>
+    <string name="title_activity_sem1_books">Sem1Books</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

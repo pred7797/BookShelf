@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sem3Books">
+
+
+    <Button
+        android:id="@+id/btn_em3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Engineering Maths III"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/btn_ds"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_em3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Data Structure"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/btn_cg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_ds"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Computer Graphics"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/btn_dlca"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_cg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="DLCA"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/btn_dsgt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_dlca"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="DSGT"
+        android:textSize="23dp" />
+
+
+</RelativeLayout>
