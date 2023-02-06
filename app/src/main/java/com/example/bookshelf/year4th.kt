@@ -2,14 +2,10 @@ package com.example.bookshelf
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.github.barteksc.pdfviewer.PDFView
 
-class MainActivity : AppCompatActivity() {
-
-
-
+class year4th : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_year4th)
     }
 }

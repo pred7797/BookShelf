@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sem3Books">
+
+  <RelativeLayout
+      android:id="@+id/loginLayout"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="10dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnToLogin"
+        android:background="@drawable/edt_background" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+      <ImageView
+          android:id="@+id/logImg"
+          android:layout_width="76dp"
+          android:layout_height="76dp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginTop="12dp"
+          android:src="@drawable/login" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"
+          android:layout_toEndOf="@+id/logImg"
+          android:fontFamily="@font/poppins_semibold"
+          android:text="Login"
+          android:textColor="@color/black"
+          android:textSize="30dp" />
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+  <TextView
+      android:id="@+id/heading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/loginLayout"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_semibold"
+      android:text="Select Year"
+      android:textColor="@color/black"
+      android:textSize="20dp" />
+  <Button
+      android:id="@+id/Year1"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginLeft="20dp"
+      android:layout_below="@+id/heading"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/btn_background"
+      android:fontFamily="@font/poppins_semibold"
+      android:text="1st year"
+      android:textSize="23dp" />
+
+  <Button
+      android:id="@+id/Year2"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_below="@+id/Year1"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/btn_background"
+      android:fontFamily="@font/poppins_semibold"
+      android:text="2nd year"
+      android:textSize="23dp" />
+
+  <Button
+      android:id="@+id/Year3"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_below="@+id/Year2"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/btn_background"
+      android:fontFamily="@font/poppins_semibold"
+      android:text="3rd year"
+      android:textSize="23dp" />
+
+  <Button
+      android:id="@+id/Year4"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_below="@+id/Year3"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/btn_background"
+      android:fontFamily="@font/poppins_semibold"
+      android:text="4th year"
+      android:textSize="23dp" />
+
+
+
+</RelativeLayout>

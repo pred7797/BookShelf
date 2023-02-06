@@ -71,5 +71,18 @@
         android:text="DSGT"
         android:textSize="23dp" />
 
+    <Button
+        android:id="@+id/btn_syllabus3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_dsgt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Sem III syllabus"
+        android:textSize="23dp" />
+
 
 </RelativeLayout>

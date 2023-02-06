@@ -38,7 +38,7 @@ class Login : AppCompatActivity() {
         }
 
         btnSkip.setOnClickListener {
-            val intent  = Intent(this, Sem::class.java)
+            val intent  = Intent(this, Year::class.java)
             startActivity(intent)
         }
 
@@ -55,7 +55,7 @@ class Login : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    val intent = Intent(this@Login,Sem::class.java)
+                    val intent = Intent(this@Login,Year::class.java)
                     startActivity(intent)
                 } else {
                     // If sign in fails, display a message to the user.

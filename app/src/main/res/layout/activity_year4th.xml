@@ -16,12 +16,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Select Sem"
+        android:text="4th Year"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
     <Button
-        android:id="@+id/btn_sem1"
+        android:id="@+id/btn_sem7"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/heading"
@@ -30,34 +30,23 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_background"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Sem 1"
+        android:text="Sem 7"
         android:textSize="23dp" />
 
     <Button
-        android:id="@+id/btn_sem2"
+        android:id="@+id/btn_sem8"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@+id/btn_sem1"
+        android:layout_below="@+id/btn_sem7"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_background"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Sem 2"
+        android:text="Sem 8"
         android:textSize="23dp" />
 
-    <Button
-        android:id="@+id/btn_sem3"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/btn_sem2"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/btn_background"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Sem 3"
-        android:textSize="23dp" />
+
 
 
 </RelativeLayout>

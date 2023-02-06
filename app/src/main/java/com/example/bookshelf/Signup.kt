@@ -41,7 +41,7 @@ class Signup : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
 
-                    val intent = Intent(this@Signup, MainActivity::class.java)
+                    val intent = Intent(this@Signup, Year::class.java)
                     startActivity(intent)
 
                 } else {
