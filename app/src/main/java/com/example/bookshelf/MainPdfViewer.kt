@@ -1,26 +1,27 @@
 package com.example.bookshelf
 
+import android.net.http.HttpResponseCache
 import android.os.AsyncTask
-import android.os.Build
 import android.os.Bundle
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.github.barteksc.pdfviewer.PDFView
 import java.io.BufferedInputStream
+import java.io.File
 import java.io.InputStream
 import java.net.HttpURLConnection
 import java.net.URL
 import javax.net.ssl.HttpsURLConnection
 
-class sem3Syllabus : AppCompatActivity() {
 
+
+class MainPdfViewer : AppCompatActivity() {
 
     // on below line we are creating
     // a variable for our pdf view.
     lateinit var pdfView: PDFView
 
     // on below line we are creating a variable for our pdf view url.
-    var pdfUrl = "https://firebasestorage.googleapis.com/v0/b/bookshelf-5bb16.appspot.com/o/MU_Sem3_Syllabus%20(1).pdf?alt=media&token=5da85a4a-3714-427d-801a-d1eb16fbc517"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,11 +30,24 @@ class sem3Syllabus : AppCompatActivity() {
         // our pdf view with its id.
         pdfView = findViewById(R.id.idPDFView)
 
+
+        val bundle = intent.extras;
+        val pdfUrl = bundle?.getString("pdf_url");
+
+
         // on below line we are calling our async
         // task to load our pdf file from url.
         // we are also passing our pdf view to
         // it along with pdf view url.
         testPDF.RetrievePDFFromURL(pdfView).execute(pdfUrl)
+
+        val cacheSize = 10 * 1024 * 1024 // 10 MB
+        val httpCacheDir = File(applicationContext.cacheDir, "http-cache")
+        HttpResponseCache.install(httpCacheDir, cacheSize.toLong())
+
+
+
+
     }
 
     // on below line we are creating a class for

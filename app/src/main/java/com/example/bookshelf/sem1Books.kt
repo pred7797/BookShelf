@@ -27,12 +27,57 @@ class sem1Books : AppCompatActivity() {
 
 
         btn_phy1.setOnClickListener {
-            val intent = Intent(this, phy1Book::class.java)
+            val intent = Intent(this, MainPdfViewer::class.java)
+
+            val bundle = Bundle().apply {
+                putString("pdf_url", "https://drive.google.com/uc?export=download&id=1eisu36cdDeiTm4rzjTtDAwWzvHk5bor_")
+            }
+            intent.putExtras(bundle);
+
             startActivity(intent)
         }
 
         btn_em1.setOnClickListener {
-            val intent = Intent(this, emBook::class.java)
+            val intent = Intent(this, MainPdfViewer::class.java)
+
+            val bundle = Bundle().apply {
+                putString("pdf_url", "https://drive.google.com/uc?export=download&id=1Od0gjQnCtz3u5zXUQ8Jx5FhWchM6YyAk")
+            }
+            intent.putExtras(bundle);
+
+            startActivity(intent)
+        }
+
+        btn_chem1.setOnClickListener {
+            val intent = Intent(this, MainPdfViewer::class.java)
+
+            val bundle = Bundle().apply {
+                putString("pdf_url", "https://drive.google.com/uc?export=download&id=16Gc0dh9DpxQFtX6RGr1OvIft5FFE9nc8")
+            }
+            intent.putExtras(bundle);
+
+            startActivity(intent)
+        }
+
+        btn_bee.setOnClickListener {
+            val intent = Intent(this, MainPdfViewer::class.java)
+
+            val bundle = Bundle().apply {
+                putString("pdf_url", "https://drive.google.com/uc?export=download&id=1Ggpa10x165Kbs1Ey_CQciU5obS_I_6Cl")
+            }
+            intent.putExtras(bundle);
+
+            startActivity(intent)
+        }
+
+        btn_eg.setOnClickListener {
+            val intent = Intent(this, MainPdfViewer::class.java)
+
+            val bundle = Bundle().apply {
+                putString("pdf_url", "https://drive.google.com/uc?export=download&id=1ALNBDp2lB6ZRBKw5ef7nQfb_QGy3ABLB")
+            }
+            intent.putExtras(bundle);
+
             startActivity(intent)
         }
 

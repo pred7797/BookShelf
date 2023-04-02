@@ -16,6 +16,13 @@
         android:theme="@style/Theme.BookShelf"
         tools:targetApi="31">
         <activity
+            android:name=".MainPdfViewer"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".sem3Syllabus"
             android:exported="false">
             <meta-data
@@ -30,7 +37,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".FE"
+            android:name=".year1st"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

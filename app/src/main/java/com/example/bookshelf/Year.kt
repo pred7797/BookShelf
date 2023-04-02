@@ -29,7 +29,7 @@ class Year : AppCompatActivity() {
         }
 
         Year1.setOnClickListener {
-            val intent = Intent(this, FE::class.java)
+            val intent = Intent(this, year1st::class.java)
             startActivity(intent)
         }
 

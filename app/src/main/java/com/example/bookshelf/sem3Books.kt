@@ -26,7 +26,13 @@ class sem3Books : AppCompatActivity() {
         btn_syllabus3 = findViewById(R.id.btn_syllabus3)
 
         btn_syllabus3.setOnClickListener {
-            val intent = Intent(this, sem3Syllabus::class.java)
+            val intent = Intent(this, MainPdfViewer::class.java)
+
+            val bundle = Bundle().apply {
+                putString("pdf_url", "https://firebasestorage.googleapis.com/v0/b/bookshelf-5bb16.appspot.com/o/MU_Sem3_Syllabus%20(1).pdf?alt=media&token=5da85a4a-3714-427d-801a-d1eb16fbc517")
+            }
+            intent.putExtras(bundle);
+
             startActivity(intent)
         }
 
